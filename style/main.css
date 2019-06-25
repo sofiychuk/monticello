@@ -1,0 +1,873 @@
+html {
+  font: 400 14px/normal 'Open Sans', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+a,
+button {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  color: #2c4058;
+}
+
+hr {
+  width: 100px;
+  margin: 0 auto;
+  -webkit-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+  color: #2c4058;
+}
+
+.btn {
+  width: 190px;
+  height: 50px;
+  background-color: transparent;
+  font-family: "GothamBook", sans-serif;
+  color: #2c4058;
+  border: 1px solid #2c4058;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.mont-container {
+  width: 1170px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.mont-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mont-header a,
+.mont-header a:focus,
+.mont-header a:active {
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mont-header__slider {
+  position: relative;
+}
+
+.mont-header__slider-item {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.mont-header__slider-item--background_1 {
+  background: url("../img/bg-header.png"), -webkit-linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%) no-repeat;
+  background: url("../img/bg-header.png"), -o-linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%) no-repeat;
+  background: url("../img/bg-header.png"), linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%) no-repeat;
+  background-size: cover;
+}
+
+.mont-header__slider-item--background_2 {
+  background: url("../img/bg-header.png"), -webkit-linear-gradient(45deg, #7d5cf9 0%, #55b7ff 70%) no-repeat;
+  background: url("../img/bg-header.png"), -o-linear-gradient(45deg, #7d5cf9 0%, #55b7ff 70%) no-repeat;
+  background: url("../img/bg-header.png"), linear-gradient(45deg, #7d5cf9 0%, #55b7ff 70%) no-repeat;
+  background-size: cover;
+}
+
+.mont-header__slider-item--background_3 {
+  background: url("../img/bg-header.png"), -webkit-linear-gradient(45deg, #55b7ff 50%, #fff75a 100%) no-repeat;
+  background: url("../img/bg-header.png"), -o-linear-gradient(45deg, #55b7ff 50%, #fff75a 100%) no-repeat;
+  background: url("../img/bg-header.png"), linear-gradient(45deg, #55b7ff 50%, #fff75a 100%) no-repeat;
+  background-size: cover;
+}
+
+.mont-header__slider-item--background_4 {
+  background: url("../img/bg-header.png"), -webkit-linear-gradient(45deg, #004a91 0%, #55b7ff 80%) no-repeat;
+  background: url("../img/bg-header.png"), -o-linear-gradient(45deg, #004a91 0%, #55b7ff 80%) no-repeat;
+  background: url("../img/bg-header.png"), linear-gradient(45deg, #004a91 0%, #55b7ff 80%) no-repeat;
+  background-size: cover;
+}
+
+.mont-header__slider-item--background_5 {
+  background: url("../img/bg-header.png"), -webkit-linear-gradient(45deg, #55b7ff 50%, #5af1ff 100%) no-repeat;
+  background: url("../img/bg-header.png"), -o-linear-gradient(45deg, #55b7ff 50%, #5af1ff 100%) no-repeat;
+  background: url("../img/bg-header.png"), linear-gradient(45deg, #55b7ff 50%, #5af1ff 100%) no-repeat;
+  background-size: cover;
+}
+
+.mont-header__slider-slogan {
+  color: #fff;
+  letter-spacing: .3em;
+  font-family: "GothamBook", sans-serif;
+  font-size: 1.29rem;
+  text-transform: uppercase;
+}
+
+.mont-header__slider-title {
+  font-size: 4.44rem;
+  letter-spacing: .05em;
+  color: #fff;
+  padding: 370px 0 30px;
+  margin: 0;
+}
+
+.mont-header__wrapper {
+  position: relative;
+  padding-top: 50px;
+}
+
+.mont-header__nav {
+  width: 55%;
+  padding: 15px 0 0 50px;
+  position: absolute;
+  left: 300px;
+}
+
+.mont-header__nav-link {
+  padding-right: 54px;
+  font-family: "GothamBook", sans-serif;
+}
+
+.mont-header__nav-link::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 15px;
+  vertical-align: 5%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.mont-header__nav-link:hover::before {
+  background-color: #fff;
+}
+
+.mont-header__logo {
+  width: 25%;
+  position: absolute;
+  left: 0;
+}
+
+.mont-header__social-icons {
+  width: 20%;
+  padding-left: 50px;
+  position: absolute;
+  right: 0;
+}
+
+.mont-header__social-link {
+  margin: 10px;
+}
+
+.mont-header .fab {
+  width: 40px;
+  height: 40px;
+  padding: 12px 0 0 13px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.mont-header .fab:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  border: none;
+  position: relative;
+}
+
+.mont-header .fab:hover.fa-instagram {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(purple));
+  background: -webkit-linear-gradient(left, red, purple);
+  background: -o-linear-gradient(left, red, purple);
+  background: linear-gradient(to right, red, purple);
+}
+
+.mont-header .fab:hover.fa-twitter {
+  background: -webkit-linear-gradient(135deg, #17a2f3 2%, #1496e1 91%);
+  background: -o-linear-gradient(135deg, #17a2f3 2%, #1496e1 91%);
+  background: linear-gradient(315deg, #17a2f3 2%, #1496e1 91%);
+}
+
+.mont-header .fab:hover.fa-facebook-f {
+  background: -webkit-radial-gradient(circle, #00a1ef 0%, #004a91 100%);
+  background: -o-radial-gradient(circle, #00a1ef 0%, #004a91 100%);
+  background: radial-gradient(circle, #00a1ef 0%, #004a91 100%);
+  padding-left: 14px;
+}
+
+.mont-header .fa-facebook-f {
+  padding-left: 15px;
+}
+
+.mont-header__scroll {
+  position: absolute;
+  bottom: 50px;
+  left: calc(49.5% - 20px);
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.mont-header__scroll:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.mont-header__scroll-circle {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.mont-header__scroll-arrow {
+  width: 0px;
+  height: 0px;
+  border: 4px solid transparent;
+  border-top-color: #fff;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -7px;
+  left: 15px;
+  -webkit-transform: rotate(0deg) translate(0px, 25px);
+  -ms-transform: rotate(0deg) translate(0px, 25px);
+  transform: rotate(0deg) translate(0px, 25px);
+}
+
+.mont-header__scroll-arrow::before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-top-color: #5d91f1;
+  display: inline-block;
+  transform: translate(-5px, -11px);
+  opacity: 0.9;
+}
+
+.mont-header .slogan {
+  font: 1.28rem "GothamBook", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.mont-what_we_do {
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.mont-what_we_do:hover hr {
+  width: 398px;
+}
+
+.mont-what_we_do:hover .mont-what_we_do__title--center {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2c4058;
+  border-right: 1px solid #2c4058;
+  border-left: 1px solid #2c4058;
+  margin-top: 0px;
+  margin-bottom: 190px;
+}
+
+.mont-what_we_do__title {
+  font-family: "GothamBold", sans-serif;
+  font-size: 3.14rem;
+  border: transparent;
+  padding-bottom: 40px;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.mont-what_we_do__title--center {
+  text-align: center;
+  margin: 40px auto 170px;
+  width: 400px;
+}
+
+.mont-what_we_do .clear-fix::after,
+.mont-what_we_do .clear-fix::before {
+  content: '';
+  clear: both;
+}
+
+.mont-what_we_do__picture--top {
+  -webkit-box-shadow: -245px -70px 0px -5px #55b7ff;
+  box-shadow: -245px -70px 0px -5px #55b7ff;
+  vertical-align: bottom;
+  -webkit-transition: 3.5s;
+  -o-transition: 3.5s;
+  transition: 3.5s;
+  opacity: .9;
+}
+
+.mont-what_we_do__picture--top:hover {
+  -webkit-box-shadow: -245px -70px 0px -5px #c045f0;
+  box-shadow: -245px -70px 0px -5px #c045f0;
+  opacity: 1;
+}
+
+.mont-what_we_do__picture--bottom {
+  -webkit-box-shadow: 245px -68px 0px 1px #7e5aff;
+  box-shadow: 245px -68px 0px 1px #7e5aff;
+  vertical-align: bottom;
+  -webkit-transition: 3.5s;
+  -o-transition: 3.5s;
+  transition: 3.5s;
+  opacity: .9;
+}
+
+.mont-what_we_do__picture--bottom:hover {
+  -webkit-box-shadow: 245px -68px 0px 1px #02cfff;
+  box-shadow: 245px -68px 0px 1px #02cfff;
+  opacity: 1;
+}
+
+.mont-what_we_do__design-picture {
+  float: left;
+  width: 60%;
+}
+
+.mont-what_we_do__content {
+  float: left;
+  width: 40%;
+  padding-top: 60px;
+}
+
+.mont-what_we_do__subtitle {
+  font-family: "GothamBook", sans-serif;
+  font-size: 1.456rem;
+  font-weight: normal;
+}
+
+.mont-what_we_do__block--bottom {
+  padding-top: 210px;
+}
+
+.mont-what_we_do__design-picture--bottom {
+  padding-left: 70px;
+  padding-bottom: 140px;
+}
+
+.mont-what_we_do__text {
+  padding: 45px 0 40px;
+  color: #4b5562;
+  font-size: 1.29rem;
+}
+
+.mont-what_we_do__location-adress {
+  font-style: italic;
+  font-size: 1.29rem;
+  color: #4b5562;
+  padding-top: 60px;
+}
+
+.mont-container--news_position {
+  position: relative;
+}
+
+.mont-latest_news {
+  background: url("../img/bg_news.jpg") no-repeat;
+  height: 1040px;
+  padding-top: 140px;
+  background-size: cover;
+}
+
+.mont-latest_news__slider-block--first {
+  position: relative;
+}
+
+.mont-latest_news__icon {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+}
+
+.mont-latest_news__icon:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.mont-latest_news__title {
+  font-family: "GothamMR", sans-serif;
+  font-size: 3.14rem;
+  color: #fff;
+  text-align: center;
+  margin: 40px auto 100px;
+  width: 400px;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.mont-latest_news:hover hr {
+  width: 398px;
+}
+
+.mont-latest_news:hover .mont-latest_news__title {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid #fff;
+  border-right: 1.5px solid #fff;
+  border-left: 1.5px solid #fff;
+  margin-top: 0px;
+  margin-bottom: 90px;
+}
+
+.mont-latest_news__slider-block {
+  width: 370px;
+  height: 515px;
+  background-color: #fff;
+  margin: 0px 20px 0px;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.mont-latest_news__slider-block:hover {
+  -webkit-box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.75);
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.mont-latest_news__slider-title {
+  font-family: "GothamBold", sans-serif;
+  font-size: 1.57rem;
+  padding: 15px 15px 0 15px;
+  line-height: 1.667;
+}
+
+.mont-latest_news__slider-text {
+  color: #4b5562;
+  font-size: 1.29rem;
+  padding: 0px 15px 15px 15px;
+  line-height: 1.667;
+}
+
+.mont-latest_news__slider-footer {
+  display: inline-block !important;
+  padding: 15px;
+}
+
+.mont-latest_news__slider-photo {
+  display: inline-block !important;
+}
+
+.mont-latest_news__slider-footer-info {
+  display: inline-block !important;
+  vertical-align: 70%;
+  padding-left: 10px;
+}
+
+.mont-latest_news__slider-photo-name {
+  color: #4b5562;
+  font-size: 1.29rem;
+  text-transform: uppercase;
+  font-family: "GothamBook", sans-serif;
+}
+
+.mont-latest_news__slider-date {
+  font-family: "GothamBook", sans-serif;
+  color: #55b7ff;
+  line-height: 1.667;
+}
+
+.hr--white {
+  color: #fff;
+}
+
+.slider-news .slick-dots {
+  position: absolute;
+  left: 480px;
+  top: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 200px;
+  width: 10px;
+}
+
+.slider-news {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider-arrow_prev {
+  position: absolute;
+  left: -100px;
+  top: 430px;
+  cursor: pointer;
+}
+
+.slider-arrow_next {
+  position: absolute;
+  right: -100px;
+  top: 430px;
+  cursor: pointer;
+}
+
+.mont-gallery {
+  padding-top: 140px;
+}
+
+.mont-gallery__title {
+  font-family: "GothamMR", sans-serif;
+  font-size: 3.14rem;
+  text-align: center;
+  margin: 40px auto 100px;
+  width: 300px;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.mont-gallery:hover hr {
+  width: 298px;
+}
+
+.mont-gallery:hover .mont-gallery__title {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid #2c4058;
+  border-right: 1.5px solid #2c4058;
+  border-left: 1.5px solid #2c4058;
+  margin-top: 0px;
+  margin-bottom: 88px;
+}
+
+.mont-gallery__btn {
+  text-align: center;
+  padding: 60px 0 140px;
+}
+
+.mont-gallery__icon-360 {
+  position: absolute;
+  top: 370px;
+  left: 250px;
+  z-index: 4;
+  -webkit-transition: .7s ease-in-out;
+  -o-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+  cursor: pointer;
+}
+
+.mont-gallery__icon-360:hover {
+  -webkit-transform: scale(1.2) rotate(360deg);
+  -ms-transform: scale(1.2) rotate(360deg);
+  transform: scale(1.2) rotate(360deg);
+}
+
+.mont-width-1-2 img {
+  opacity: .8;
+}
+
+.mont-width-1-2 img:hover {
+  opacity: 1;
+  z-index: 2;
+}
+
+.mont-container--position {
+  position: relative;
+}
+
+.mont-map {
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+.mont-footer {
+  background: url("../img/bg-footer.jpg") no-repeat;
+  background-size: cover;
+}
+
+.mont-footer-container {
+  width: 775px;
+  margin: 0 auto;
+}
+
+.mont-footer__form-wrapper {
+  height: 450px;
+  width: 770px;
+  background-size: cover;
+  background: #fff url("../img/bg-form.png") 50% 100% no-repeat;
+  z-index: 3;
+  position: relative;
+}
+
+.mont-footer__form div {
+  float: left;
+  width: 50%;
+}
+
+.mont-footer__form {
+  padding: 60px 60px 80px;
+  margin-top: -330px;
+}
+
+.mont-footer__form:hover hr {
+  width: 398px;
+  color: #2c4058;
+}
+
+.mont-footer__form:hover .mont-footer__form-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1.5px solid #2c4058;
+  border-right: 1.5px solid #2c4058;
+  border-left: 1.5px solid #2c4058;
+  margin-top: 0px;
+  margin-bottom: 58px;
+}
+
+.mont-footer__form-title {
+  font-family: "GothamMR", sans-serif;
+  font-size: 3.14rem;
+  text-align: center;
+  margin: 30px auto 60px;
+  width: 400px;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.mont-footer__form-info i {
+  color: #7e5aff;
+}
+
+.mont-footer__form-info-text {
+  font-size: 1.29rem;
+  font-family: "GothamBook", sans-serif;
+  padding-bottom: 40px;
+  color: #2c4058;
+}
+
+.mont-footer__form-input {
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #2c4058;
+  outline: none;
+  padding-bottom: 15px;
+  font-size: 1.29rem;
+  font-family: "GothamBook", sans-serif;
+  margin: 0 0 40px 25px;
+  color: #2c4058;
+}
+
+.mont-footer__form-input:focus {
+  border-bottom: 1px solid #7e5aff;
+}
+
+.mont-footer__form-submit {
+  width: 140px;
+  float: right;
+}
+
+.mont-footer__logo-icons {
+  padding-top: 60px;
+}
+
+.mont-footer__logo {
+  float: left;
+}
+
+.mont-footer__social-icons {
+  float: right;
+}
+
+.mont-footer__social-icons {
+  padding-left: 50px;
+}
+
+.mont-footer__social-link {
+  margin: 10px;
+}
+
+.mont-footer .fab {
+  width: 40px;
+  height: 40px;
+  padding: 12px 0 0 13px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.mont-footer .fab:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  border: none;
+  position: relative;
+}
+
+.mont-footer .fab:hover.fa-instagram {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(purple));
+  background: -webkit-linear-gradient(left, red, purple);
+  background: -o-linear-gradient(left, red, purple);
+  background: linear-gradient(to right, red, purple);
+}
+
+.mont-footer .fab:hover.fa-twitter {
+  background: -webkit-linear-gradient(135deg, #17a2f3 2%, #1496e1 91%);
+  background: -o-linear-gradient(135deg, #17a2f3 2%, #1496e1 91%);
+  background: linear-gradient(315deg, #17a2f3 2%, #1496e1 91%);
+}
+
+.mont-footer .fab:hover.fa-facebook-f {
+  background: -webkit-radial-gradient(circle, #00a1ef 0%, #004a91 100%);
+  background: -o-radial-gradient(circle, #00a1ef 0%, #004a91 100%);
+  background: radial-gradient(circle, #00a1ef 0%, #004a91 100%);
+  padding-left: 14px;
+}
+
+.mont-footer .fa-facebook-f {
+  padding-left: 15px;
+}
+
+.mont-footer a,
+.mont-footer a:focus,
+.mont-footer a:active {
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mont-footer__text-copyright {
+  padding: 40px 0 210px;
+  font-family: "GothamBook", sans-serif;
+  color: #fff;
+}
+
+.mont-footer__vertical-line {
+  font-size: 20px;
+  vertical-align: -15%;
+  border-right: 1px solid #fff;
+}
+
+.logo {
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.slick-dots {
+  position: absolute;
+  right: 80px;
+  top: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 200px;
+  width: 10px;
+}
+
+.slick-dots li button:before {
+  height: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: transparent;
+  width: 6px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-top: 30px;
+  opacity: .75;
+}
+
+button:before {
+  height: 6px;
+  margin-top: 30px;
+  color: transparent;
+  width: 6px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.slick-dots li.slick-active button:before {
+  height: 6px;
+  color: transparent;
+  width: 6px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: white;
+  opacity: 1;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 32px 28px 72px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 32px 28px 72px -17px rgba(0, 0, 0, 0.75);
+  text-shadow: 3px 8px 7px 7px rgba(0, 0, 0, 0.75);
+}
+
+.btn:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}

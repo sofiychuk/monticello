@@ -1,0 +1,27 @@
+.mont-grid img {
+	display: inline-block;
+	width: 100%;
+}
+
+.mont-grid > [class*="mont-width-"] {
+    float: left;
+}
+
+.mont-grid {
+    overflow: auto;
+    margin-left: -14px;
+}
+
+.mont-grid + .mont-grid {
+	margin-top: 15px;
+}
+
+[class*="mont-width-"] {
+	overflow: hidden;
+	padding-left: 15px;
+    line-height: 0;
+}
+
+.mont-width-1-2 {
+    width: 50%;
+} 
